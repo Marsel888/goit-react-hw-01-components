@@ -1,0 +1,23 @@
+.list {
+  list-style-type: none;
+  width: 400px;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.link {
+  width: 80px;
+}
+
+.true {
+  composes: link;
+
+  background-color: green;
+}
+
+.false {
+  composes: link;
+  background-color: red;
+}

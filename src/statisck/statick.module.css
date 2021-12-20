@@ -1,0 +1,21 @@
+.box {
+  width: 70px;
+  height: 70px;
+}
+.section {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  color: aliceblue;
+  font-size: 18px;
+}
+.statick {
+  width: 400px;
+  text-align: center;
+}

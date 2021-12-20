@@ -1,0 +1,36 @@
+.profile {
+  width: 400px;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: auto;
+  display: block;
+  background-color: aqua;
+}
+.name {
+  text-align: center;
+  font-size: 15px;
+}
+.stats {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  border: solid;
+  background-color: beige;
+  border-color: brown;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  align-items: center;
+}
+.discription {
+  border: solid;
+  background-color: beige;
+  border-color: brown;
+}
