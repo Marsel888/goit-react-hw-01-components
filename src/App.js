@@ -1,11 +1,11 @@
-import user from './user.json'
-import Profile from './profile/Profile'
-import statick from './statick.json'
-import Statick from './statisck/Statisck'
-import Frieds from './friends/friends'
-import friends from './friends.json'
-import tran from './tran.json'
-import Transaction from './historyTrans/historyTran'
+import user from './data/user.json'
+import Profile from './Components/profile/Profile'
+import statick from './data/statick.json'
+import Statick from './Components/statisck/Statisck'
+import Frieds from './Components/friends/friends'
+import friends from '././data/friends.json'
+import tran from '././data/tran.json'
+import Transaction from './Components/historyTrans/historyTran'
 function App() {
   return (
     <>
@@ -14,9 +14,7 @@ function App() {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        statsF={user.stats.followers}
-        statsV={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
       <Statick statick={statick} titile="Upload stats" />
       <Frieds friends={friends} />

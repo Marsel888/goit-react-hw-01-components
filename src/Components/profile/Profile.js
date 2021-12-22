@@ -1,6 +1,6 @@
 import style from '../profile/profile.module.css'
 import propTypes from 'prop-types'
-function Profile({ username, tag, location, avatar, statsF, statsV, likes }) {
+function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={style.profile}>
       <div className={style.discription}>
@@ -13,15 +13,15 @@ function Profile({ username, tag, location, avatar, statsF, statsV, likes }) {
       <ul className={style.stats}>
         <li className={style.list}>
           <span className="label">Followers</span>
-          <span className="quantity">{statsF}</span>
+          <span className="quantity">{stats.followers}</span>
         </li>
         <li className={style.list}>
           <span className="label">Views</span>
-          <span className="quantity">{statsV}</span>
+          <span className="quantity">{stats.views}</span>
         </li>
         <li className={style.list}>
           <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
     </div>

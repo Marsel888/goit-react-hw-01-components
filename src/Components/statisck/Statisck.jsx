@@ -3,7 +3,8 @@ import propTypes from 'prop-types'
 function Statick({ statick, titile }) {
   return (
     <section className={style.statick}>
-      <h2 className="title">{titile}</h2>
+      {titile && <h2 className="title">{titile}</h2>}
+
       <ul className={style.section}>
         {statick.map((stat) => (
           <li
